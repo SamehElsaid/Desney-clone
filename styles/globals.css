@@ -111,3 +111,10 @@
 .transition-visibility{
   transition: visibility 0.6s linear,opacity 0.6s linear;
 }
+.jd {
+  -webkit-line-clamp: 14;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

@@ -34,7 +34,7 @@ const Show = ({ res, topRated }) => {
                     </div>
                     <div className="absolute || bottom-0 || z-10  || py-5 || w-full">
                         <div className="container || mx-auto">
-                            <h1 className='text-3xl || w-[80%] || md:text-5xl || font-semibold'>{res.title || res.original_name}</h1>
+                            <h1 className='text-3xl || w-[100%] md:w-[80%] || md:text-5xl || font-semibold'>{res.title || res.original_name}</h1>
                             <div className="w-[80%]">
                                 <div className="flex flex-wrap gap-4 items-center || mt-8">
                                     <button className='flex items-center gap-1 text-[#040714] || px-6 || py-2.5 
@@ -65,7 +65,7 @@ const Show = ({ res, topRated }) => {
                                     <ul>
                                         {res.genres.map((genre, i) => <span key={i}> •{" "}{genre.name}</span>)}
                                     </ul>
-                                    <h4 className="text-sm || md:text-lg || max-w-4xl || mt-5">{res.overview}</h4>
+                                    <h4 className="text-sm || md:text-lg || max-w-4xl || jd || mt-5">{res.overview}</h4>
                                 </div>
                             </div>
                         </div>
