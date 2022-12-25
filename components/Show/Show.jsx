@@ -13,7 +13,9 @@ const Show = ({ res, topRated }) => {
     const router = useRouter()
     useEffect(()=>{
         if(!login){
-            router.push("/")
+            setTimeout(()=>{
+                router.push("/")
+            },3000)
         }
     },[login])
     return (
